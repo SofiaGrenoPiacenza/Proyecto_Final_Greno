@@ -1,0 +1,24 @@
+ footer {
+    background-color: $color-navbar-bg;
+    color: $color-texto-blanco;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+  
+    a {
+      color: $color-texto-blanco;
+      text-decoration: none;
+  
+      &:hover,
+      &:focus {
+        color: $color-acento;
+        text-decoration: underline;
+      }
+    }
+  
+    div a {
+      font-weight: 600;
+      margin: 0 0.5rem;
+      font-size: 1.1rem;
+    }
+  }
+  

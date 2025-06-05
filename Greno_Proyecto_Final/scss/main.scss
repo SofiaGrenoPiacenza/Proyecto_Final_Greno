@@ -1,0 +1,263 @@
+/* Variables base */
+$color-negro: #000000;
+$color-blanco: #ffffff;
+$color-gris-claro: #f5f5f5;
+$color-gris-medio: #333333;
+
+/* Mixins */
+@mixin texto-blanco {
+  color: $color-blanco !important;
+}
+
+@mixin texto-negro {
+  color: $color-negro !important;
+}
+
+/* Reset básico y box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Body y tipografía base */
+body {
+  background-color: $color-negro;
+  color: $color-blanco;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Enlaces */
+a,
+a:visited {
+  @include texto-blanco;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: lighten($color-blanco, 20%);
+    text-decoration: underline;
+  }
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+  @include texto-blanco;
+  font-family: 'Bebas Neue', cursive;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Secciones con fondo claro */
+.bg-blanco {
+  background-color: $color-gris-claro;
+  color: $color-negro;
+
+  a,
+  a:visited {
+    color: $color-negro;
+
+    &:hover,
+    &:focus {
+      color: darken($color-negro, 20%);
+      text-decoration: underline;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $color-negro;
+  }
+}
+
+/* Botones */
+.btn {
+  cursor: pointer;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  transition: all 0.3s ease;
+
+  &.btn-primary {
+    background-color: $color-blanco;
+    color: $color-negro;
+
+    &:hover {
+      background-color: lighten($color-blanco, 10%);
+      box-shadow: 0 4px 12px rgba(3, 3, 3, 0.87);
+    }
+  }
+
+  &.btn-secondary {
+    background-color: transparent;
+    border: 2px solid $color-blanco;
+    color: $color-blanco;
+
+    &:hover {
+      background-color: $color-blanco;
+      color: $color-negro;
+    }
+  }
+}
+
+/* Tarjetas */
+.card {
+  background-color: $color-gris-claro;
+  color: $color-negro;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  }
+
+  img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-body {
+    padding: 1rem;
+
+    .card-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: $color-negro;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: $color-gris-medio;
+      margin-bottom: 1rem;
+    }
+
+    .btn-primary {
+      background-color: $color-negro;
+      color: $color-blanco;
+      border: none;
+      padding: 0.6rem 1.4rem;
+      border-radius: 50px;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: lighten($color-negro, 20%);
+        color: $color-negro;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+
+/* Listas sin estilo */
+ul,
+ol {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+  color: $color-blanco;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Formularios */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid $color-blanco;
+  background-color: transparent;
+  color: $color-blanco;
+  transition: border-color 0.3s ease;
+
+  &::placeholder {
+    color: lighten($color-blanco, 40%);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-blanco;
+    background-color: $color-gris-medio;
+    color: $color-negro;
+  }
+}
+
+/* Header y footer */
+header,
+footer {
+  background-color: $color-negro;
+  color: $color-blanco;
+  padding: 1.5rem 1rem;
+  text-align: center;
+
+  a {
+    @include texto-blanco;
+    font-weight: 600;
+    margin: 0 0.5rem;
+  }
+}
+
+/* Títulos especiales */
+.lead {
+  font-size: 1.25rem;
+  color: lighten($color-blanco, 30%);
+  margin-bottom: 1.5rem;
+}
+
+/* Centrados y layout */
+.text-center {
+  text-align: center;
+}
+
+/* Responsive Básico */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+}
+
+/* Logo portada */
+.logo-portada {
+  width: 300px;
+  max-width: 80%;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  filter: brightness(1.1) blur(1px);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    filter: brightness(1.2) blur(0);
+  }
+}

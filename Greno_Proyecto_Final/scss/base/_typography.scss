@@ -1,0 +1,24 @@
+ h1, h2, h3, h4, h5, h6 {
+    font-family: $font-principal;
+    font-weight: 700;
+    color: $color-principal;
+    margin-bottom: 1rem;
+  }
+  
+  p, a, span, li {
+    font-family: $font-secundaria;
+    font-weight: 400;
+    color: $color-texto;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: $color-acento;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: $color-secundario;
+    }
+  }
+  

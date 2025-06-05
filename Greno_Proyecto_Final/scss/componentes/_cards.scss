@@ -1,0 +1,27 @@
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  .card-title {
+    color: $color-principal;
+    font-weight: 700;
+  }
+  
+  .card-text {
+    color: $color-texto-secundario;
+  }
+  .card {
+  background-color: $color-bg-darker;
+  color: $color-white;
+  border: none;
+  @include transition(transform);
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}

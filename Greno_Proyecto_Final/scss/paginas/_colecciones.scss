@@ -1,0 +1,55 @@
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: #3a3a3a;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+  
+  .card {
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+  
+    img {
+      height: 250px;
+      object-fit: cover;
+    }
+  
+    .card-title {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: #115e59; // verde petróleo
+    }
+  
+    .card-text {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #555;
+    }
+  
+    .btn-primary {
+      background-color: #115e59;
+      border: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.6rem 1.4rem;
+      border-radius: 50px;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #167a72;
+        box-shadow: 0 4px 10px rgba(22, 122, 114, 0.5);
+      }
+    }
+  }
+  

@@ -1,0 +1,28 @@
+.hero {
+    h1 {
+
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+  
+    a.btn {
+      transition: transform 0.3s ease;
+  
+      &:hover,
+      &:focus {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px $color-acento;
+      }
+    }
+  }
+  
+  .destacados {
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+  

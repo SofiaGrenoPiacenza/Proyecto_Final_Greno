@@ -1,0 +1,26 @@
+// _navbar.scss
+
+.navbar {
+  background-color: #111; // fondo oscuro para navbar
+
+  .navbar-brand {
+    color: #fff !important;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: #fff !important;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover,
+      &.active {
+        background-color: #fff;
+        color: #000 !important;
+      }
+    }
+  }
+}

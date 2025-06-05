@@ -1,0 +1,60 @@
+/* pages/_nosotros.scss */
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: #3a3a3a;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+  
+  .lead {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    color: #555;
+    text-align: center;
+  }
+  
+  h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    color: #115e59;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+  
+    li {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  img {
+    border-radius: 1rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    max-width: 100%;
+    height: auto;
+  }
+  

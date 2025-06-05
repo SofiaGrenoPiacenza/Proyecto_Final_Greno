@@ -1,0 +1,160 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, .navbar-brand {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+.navbar {
+  background-color: #111;
+}
+
+.navbar .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  background-color: #fff;
+  color: #000 !important;
+}
+
+.hero {
+  background: url('../images/banner-dlass.jpg') no-repeat center center;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 6rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.destacados h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-outline-primary {
+  border-color: #fff;
+  color: #0a0a0a;
+  border-radius: 30px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+form button.btn-primary {
+  background-color: #3251806c;
+  border-color: #3251806c;
+}
+
+form button.btn-primary:hover {
+  background-color: #3251806c;
+  border-color: #3251806c;
+}
+
+.hero-logo {
+  max-width: 300px;
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.hero-logo:hover {
+  transform: scale(1.05);
+}
+
+
+form label,
+form input,
+form textarea,
+form button {
+  color: #fff;
+}
+
+form input,
+form textarea {
+  background-color: #000;
+  border: 1px solid #444;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #bbb;
+
+}
+.card, 
+.card-text, 
+.card p,
+.articulo-texto,
+.product-description {
+  color: #fff !important;
+}
+.fondo-negro {
+  color: white;
+}
+
+.card, 
+.card-text, 
+.card p,
+.card-title,
+.card-body,
+.articulo-texto,
+.product-description,
+section,
+footer,
+header,
+nav,
+div {
+  color: #fff !important;
+}
+
+.fondo-negro {
+  color: white !important;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #444;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #bbb;
+}
